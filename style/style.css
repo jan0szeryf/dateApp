@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Calibri', Times, sans-serif;
 }
 
 html, body {
@@ -23,29 +23,41 @@ html, body {
 .text {
     font-size: 400%;
     line-height: 150%;
+
+    display: inline-block;
 }
 
-.text2 {
+.contentText {
     font-size: 300%;
-    line-height: 150%;
+    line-height: 200%;
 }
 
-img {
+.mainImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
 }
 
+.sideImgLeft {
+    position: absolute;
+    left: 30%;
+}
+
+.sideImgRight {
+    position: absolute;
+    right: 30%;
+}
+
 .button {
-    transition: 0.2s;
+    transition: all 0.2s, background-color 0.6s;
 
     padding: 14px 20px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid white;
     border-radius: 2vw;
-    background-color: #eb6bcf;
+    background-color: #e691d3;
 
     display: block;
 
@@ -55,7 +67,7 @@ img {
 
 .button:hover {
     cursor: pointer;
-    background-color: #e68ad2;
+    background-color: #ffb3d9;
 }
 
 #noButton {
@@ -64,6 +76,18 @@ img {
     left: 50%;
 
     transform: translate(-50%, 0);
+}
+
+.susEmojiImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    opacity: 0;
+
+    width: 5vw;
+
+    transition: opacity 0.2s;
 }
 
 a {
@@ -85,7 +109,7 @@ a {
 .menu .menuOptionContent {
     display: inline-block;
     margin: 1%;
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vw;
 
     width: 20vw;
     height: 25vw;
@@ -107,13 +131,13 @@ a {
     width: 20vw;
     height: 25vw;
 
-    background-color: #eb6bcf;
+    background: radial-gradient(#ffb3d9, #e691d3);
 
     border-radius: 5vw;
 
     position: absolute;
 
-    transition: 1s;
+    transition: 1s 0.3s;
 
     font-size: 2vw;
 }
@@ -133,7 +157,7 @@ a {
         padding-top: 10%;
     }
 
-    .text2 {
+    .contentText {
         font-size: 200%;
         padding: 2%;
     }

@@ -6,10 +6,14 @@
     <meta name="view-transition" content="same-origin">
     <title>Gorące mamuśki w Twojej okolicy!</title>
     <link href="../style/style.css" rel="stylesheet">
+
+    <script src="../script/script.js"></script>
 </head>
 <body>
     <div class = "container">
         <div class="text">
+            <img class="sideImgLeft" width="150vw" height="157vw" src="../media/spin.gif" alt="tu bedzie zdjecie">
+            <img class="sideImgRight" width="150vw" height="157vw" src="../media/spin.gif" alt="tu bedzie zdjecie">
             <h2>Fajnie ;3</h2>
             <span>A gdzie?</span>
         </div>
@@ -19,25 +23,25 @@
                 <div class="menuOptionContent">
                     <div class="menuOptionCover"></div>
 
-                    <h1 class="text2">Randka 1</h1>
+                    <h1 class="contentText">Randka 1</h1>
                 </div>
-                <button class="button">wybieram tą</button>
+                <button class="button" onclick="selectOption(1)">wybieram tą</button>
             </div>
             <div class="menuOption">
                 <div class="menuOptionContent">
                     <div class="menuOptionCover"></div>
 
-                    <h1 class="text2">Randka 2</h1>
+                    <h1 class="contentText">Randka 2</h1>
                 </div>
-                <button class="button">albo tą</button>
+                <button class="button" onclick="selectOption(2)">albo tą</button>
             </div>
             <div class="menuOption">
                 <div class="menuOptionContent">
                     <div class="menuOptionCover"></div>
 
-                    <h1 class="text2">Randka 3</h1>
+                    <h1 class="contentText">Randka 3</h1>
                 </div>
-                <button class="button">a jednak może tą</button>
+                <button class="button" onclick="selectOption(3)">a jednak może tą</button>
             </div>
         </div>
     </div>
