@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(pink, #e691d3, pink);
+}
+
+.container {
+    text-align: center;
+
+    top: 10%;
+
+    position: sticky;
+}
+
+.text {
+    font-size: 400%;
+    line-height: 150%;
+}
+
+.text2 {
+    font-size: 300%;
+    line-height: 150%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.button {
+    transition: 0.2s;
+
+    padding: 14px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 2vw;
+    background-color: #eb6bcf;
+
+    display: block;
+
+    text-align: center;
+    font-size: 24px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #e68ad2;
+}
+
+#noButton {
+    position: sticky;
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 1%;
+}
+
+.menu {
+    margin-top: 3%;
+}
+
+.menu .menuOption {
+    display: inline-block;
+    margin: 1%;
+}
+
+.menu .menuOptionContent {
+    display: inline-block;
+    margin: 1%;
+    margin-bottom: 2vw;
+
+    width: 20vw;
+    height: 25vw;
+
+    border: 1px white solid;
+    border-radius: 5vw;
+
+    background-color: rgb(255, 225, 233);
+    
+    transition: 1s;
+    transform: rotateY(-180deg);
+}
+
+.menu .menuOptionContent:hover {
+    transform: rotateY(0) scale(110%);
+}
+
+.menu .menuOptionContent .menuOptionCover {
+    width: 20vw;
+    height: 25vw;
+
+    background-color: #eb6bcf;
+
+    border-radius: 5vw;
+
+    position: absolute;
+
+    transition: 1s;
+
+    font-size: 2vw;
+}
+
+.menu .menuOptionContent .menuOptionCover span {
+    position: sticky;
+    top: 50%;
+}
+
+.menu .menuOptionContent .menuOptionCover:hover {
+    opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 300%;
+        padding-top: 10%;
+    }
+
+    .text2 {
+        font-size: 200%;
+        padding: 2%;
+    }
+
+    .button {
+        border-radius: 15vw;
+    }
+
+    img {
+        width: 70vw;
+        height: 100vw;
+
+        padding: 5%;
+    }
+
+    .menu {
+        padding-bottom: 10vw;
+    }
+    
+    .menu .menuOption {
+        display: block;
+        margin: 1%;
+    }
+
+    .menu .menuOption {
+        margin-bottom: 10%;
+    }
+
+    .menu .menuOptionContent {
+        border-radius: 15vw;
+
+        width: 60vw;
+        height: 75vw;
+    }
+
+    .menu .menuOptionContent .menuOptionCover {
+        border-radius: 15vw;
+
+        width: 60vw;
+        height: 75vw;
+    }
+}
